@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oomfiverse</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="../../media/oomfiverse-icon.png"/>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const chapters = document.querySelectorAll(
+            ".chapter-content:not(.no-animation)"
+          );
+      
+          function typeWriter(element, text, delay) {
+            let index = 0;
+            function type() {
+              if (index < text.length) {
+                element.innerHTML = text.substring(0, index + 1);
+                index++;
+                setTimeout(type, delay);
+              }
+            }
+            type();
+          }
+          let delayBetweenChapters = 36000; // Delay - next chapter
+          let typingDelay = 30; // Delay - each character
+      
+          chapters.forEach((chapter, index) => {
+            const text = chapter.innerHTML; 
+            chapter.innerHTML = "";
+            setTimeout(() => {
+              typeWriter(chapter, text, typingDelay);
+            }, index * delayBetweenChapters);
+          });
+        });
+      </script>
+  </head>
+  <body>
+    <div class="chapter-container first-chapter">
+      <h2 class="chapter-title">Prologue</h2>
+      <div class="character-images-container">
+        <div class="character-container">
+          <img
+            src="../../pbs/timfernix.jpg"
+            alt="timfernix"
+            class="character-image small-image"
+          />
+          <p class="character-name">timfernix</p>
+        </div>
+      </div>
+      <div id="prologue" class="chapter-content no-animation">
+        In the not-so-distant future, humanity faced a critical juncture. 
+        Earth was plagued by overpopulation, environmental decay, and dwindling resources. 
+        The dream of colonizing Mars had shifted from science fiction to an urgent necessity.  
+        Among the hopeful pioneers were 8 friends, each with unique skills and visions for a new life on the red planet. 
+        As they boarded the spacecraft, a mix of excitement and anxiety filled the air. 
+        They were not just embarking on a journey to another planet; they were stepping into the unknown, ready to forge a new destiny. 
+        They envisioned a society built on cooperation, equality, and shared dreams. 
+        But beneath the surface, tensions simmered, and the fragile bonds of friendship would soon be tested. 
+        As the spacecraft pierced through the atmosphere and descended onto the Martian surface, the friends could hardly contain their enthusiasm. 
+        They were about to make history, but little did they know that their greatest challenge would not be the unforgiving environment of Mars, but each other. 
+      </div>
+    </div>
+    <div class="chapter-container">
+        <h2 class="chapter-title">Characters</h2>
+        <div class="character-images-container">
+            <div class="character-container">
+                <img src="../../pbs/Enigma_EUW.jpg" alt="Enigma" class="character-image small-image" />
+                <p class="character-name">Enigma</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/jumbshd123.jpg" alt="jumbshd" class="character-image small-image" />
+                <p class="character-name">jumbshd</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/kc_kenjint.jpg" alt="Kenjin" class="character-image small-image" />
+                <p class="character-name">Kenjin</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/LonelyKatarina.jpg" alt="Ali" class="character-image small-image" />
+                <p class="character-name">Ali</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/Mimizucchini.jpg" alt="Mimizucchini" class="character-image small-image" />
+                <p class="character-name">Mimizucchini</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/TraashyCakes78.jpg" alt="Mio" class="character-image small-image" />
+                <p class="character-name">Mio</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/YSheiny.jpg" alt="YSheiny" class="character-image small-image" />
+                <p class="character-name">YSheiny</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/ilyutoda.jpg" alt="Rio" class="character-image small-image" />
+                <p class="character-name">Rio</p>
+            </div>
+        </div>
+        <div id="characters" class="chapter-content no-animation">
+            <b><u>Enigma:</u></b><br><b>Role: </b>Geologist <b>Skills:</b> Soil analysis and resource identification <b>Traits: </b>Detail-oriented but occasionally secretive<br>
+            <b><u>jumbshd:</u></b><br><b>Role: </b>Medic <b>Skills:</b> Emergency medicine and human physiology <b>Traits: </b>Calm under pressure but protective to a fault<br>
+            <b><u>Kenjin:</u></b><br><b>Role: </b>Strategist <b>Skills:</b> Environmental science and sustainability <b>Traits: </b>Logical and foresighted, but overly cautious at times<br>
+            <b><u>Ali:</u></b><br><b>Role: </b>Mechanic <b>Skills:</b> Repair and improvisation <b>Traits: </b>Hands-on and resourceful, but impulsive<br>
+            <b><u>Mimizucchini:</u></b><br><b>Role: </b>Architect <b>Skills:</b> Habitat design and aesthetics <b>Traits: </b>Innovative but struggles with balancing beauty and functionality<br>
+            <b><u>Mio:</u></b><br><b>Role: </b>Botanist <b>Skills:</b> Sustainable agriculture <b>Traits: </b>Optimistic and creative, but sometimes overly idealistic<br>
+            <b><u>YSheiny:</u></b><br><b>Role: </b>Engineer <b>Skills:</b> Robotics and problem-solving <b>Traits: </b>Resourceful but prone to overanalyzing<br>
+            <b><u>Rio:</u></b><br><b>Role: </b>Environmental Scientist <b>Skills:</b> Ecosystem management and climate analysis <b>Traits: </b>Passionate about sustainability but can be overly idealistic<br>
+        </div>
+      </div>
+      <div class="chapter-container">
+        <h2 class="chapter-title">Chapter 1</h2>
+        <div class="character-images-container">
+            <div class="character-container">
+                <img src="../../pbs/Enigma_EUW.jpg" alt="Enigma" class="character-image small-image" />
+                <p class="character-name">Enigma</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/jumbshd123.jpg" alt="jumbshd" class="character-image small-image" />
+                <p class="character-name">jumbshd</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/kc_kenjint.jpg" alt="Kenjin" class="character-image small-image" />
+                <p class="character-name">Kenjin</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/LonelyKatarina.jpg" alt="Ali" class="character-image small-image" />
+                <p class="character-name">Ali</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/Mimizucchini.jpg" alt="Mimizucchini" class="character-image small-image" />
+                <p class="character-name">Mimizucchini</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/TraashyCakes78.jpg" alt="Mio" class="character-image small-image" />
+                <p class="character-name">Mio</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/YSheiny.jpg" alt="YSheiny" class="character-image small-image" />
+                <p class="character-name">YSheiny</p>
+            </div>
+            <div class="character-container">
+                <img src="../../pbs/ilyutoda.jpg" alt="Rio" class="character-image small-image" />
+                <p class="character-name">Rio</p>
+            </div>
+        </div>
+        <div id="chapter1part1" class="chapter-content">
+            The spacecraft landed with a soft thud on the Martian surface. Dust swirled around the landing gear. The friends unbuckled their harnesses, excitement buzzing in the air. <br><br>
+            <b>YSheiny</b> checked the systems. All systems were green. They felt a surge of responsibility.
+            They could either <u>lead the team in setting up the base or conduct a systems check on the rover.</u><br><br>
+            <b>jumbshd</b> gathered the medical supplies. A quick health check was necessary before stepping out.They wanted to ensure everyone was fit for the mission.
+            They could either <u>perform a full medical assessment on the team or focus on preparing a first aid kit for emergencies.</u><br><br>
+            <b>Mio</b> peered out the window. The landscape was breathtaking. Planning for the first crops was essential, and their mind raced with possibilities. 
+            They could either <u>start scouting for suitable farming locations or begin designing a greenhouse prototype.</u><br><br>
+            <b>Enigma</b> studied the terrain through the viewport. Analyzing the soil was a priority. They felt a pull toward the Martian ground.
+            They could either <u>take soil samples immediately or set up a temporary lab for more detailed analysis later.</u><br><br>
+            <b>Mimizucchini</b> grabbed their design sketches. Mapping out the habitat layout was important. Their vision for beauty was ignited.
+            They could either <u>sketch the initial layout of the habitat or focus on creating a communal space for the team.</u><br><br>
+            <b>Ali</b> checked the tools. Ensuring everything was ready for repairs was crucial. They were eager to dive into hands-on work.
+            They could either <u>inspect the tools for functionality or start assembling the equipment needed for the habitat.</u><br><br>
+            <b>Kenjin</b> looked at the group. Establishing a sustainable plan was necessary. Their focus was on long-term survival.
+            They could either <u>draft a plan for resource management or initiate a discussion on team roles and responsibilities.</u><br><br>
+            <b>Rio</b> examined the Martian landscape through the viewport. Understanding the environment was crucial for their mission. They felt a strong desire to protect the new ecosystem. 
+            They could either <u>assess the local climate conditions or start mapping out potential areas for sustainable resource use.</u><br><br>
+            Each friend felt the weight of their choices. They stood at the threshold, ready to step into the unknown.
+            </div>
+      </div>
+    
+    <!--More chapters-->
+    <div class="navbar">
+      <a href="../../index.html">Home</a>
+    </div>
+  </body>
+</html>
