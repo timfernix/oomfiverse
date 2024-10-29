@@ -6,4 +6,5 @@ Welcome to the **Oomfiverse**! This project is my try to create a universe for m
 | Version | Changes |
 |---------|---------|
 |v1.0|Created Project Base, including the first story session|
+|v.1.1|Added Visitcounter|
 |Upcoming||
